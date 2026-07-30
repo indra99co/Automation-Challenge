@@ -1,23 +1,21 @@
-# Automation-Challenge
+npm test                
+npm run allure:serve
 
+Total test case yang dibuat: 8 scenario
 
-Welcome to Rumah123 Automation Mobile Challenge, please follow below instruction for this chanllenge
+| 1 | Verify homepage core elements are displayed | `@Smoke` | Smoke / UI check | Memastikan elemen inti homepage tampil |
+| 2 | Verify homepage discovery chips are displayed | `@Smoke` `@UI` | Smoke / UI | Memastikan chip discovery (lokasi / lanjutkan pencarian) tampil |
+| 3 | Verify property recommendation cards details | `@UI` | UI | Memastikan kartu properti punya title, harga, lokasi |
+| 4 | Search for a property from homepage | `@Functional` | Functional | Menguji alur search dari homepage |
+| 5 | Navigate using bottom navigation tabs | `@Functional` | Functional | Menguji pindah tab Beranda / Cari / Disimpan / Profil |
+| 6 | Swipe property recommendation cards | `@Functional` `@UI` | Functional / UI | Menguji gesture swipe carousel kartu |
+| 7 | Verify recommendation features section | `@UI` | UI | Menguji section Fitur Rekomendasi + Simulasi KPR |
+| 8 | Search with invalid keyword | `@Negative` | Negative | Memastikan keyword tidak valid tidak membuat app crash |
 
-## Requirement:
-- use newest Appium Version
-- use WebdriverIO as framework
-- use CommonJS as a code
-- use Page Object Model for code structure
-- use Gherkin as Test Cases
+Sebelum tiap scenario di atas, Cucumber selalu menjalankan:
 
-## Test Cases:
-- You are as an QA at Rumah123, please download latest version of Rumah123 Consumer App (do not download the Pro Apps). You have the project to testing the revamp part on homepage, please scan all the locators and make it into the automation. so you can reduce testing time and also catch the bugs very sooner.
-- How to access the homepage
-1. please open the app
-2. once it's open you will see the homepage
+1. 'Given I have installed the Rumah123 Consumer App' — memastikan app Consumer 'com.rumah123' terpasang
+2. 'When I open the application' — membuka/mengaktifkan aplikasi
+3. 'Then I should see the homepage' — memastikan user sudah berada di homepage
 
-
-Rule:
-- Please forking this repository
-- Invite indra99co as collaborator
-- once you done, please push into your branch and create the PR
+Ini membuat setiap TC punya prekondisi yang sama: app siap dan homepage terlihat.
