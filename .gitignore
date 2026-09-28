@@ -1,0 +1,13 @@
+node_modules/
+logs/
+apps/*.apk
+apps/*.aab
+apps/*.ipa
+screenshots/
+
+# personal files
+*.pdf
+locator-scan/
+
+# local interview prep notes (not pushed)
+interview-prep/
