@@ -1,23 +1,32 @@
-# Automation-Challenge
 
+### Catatan App
 
-Welcome to Rumah123 Automation Mobile Challenge, please follow below instruction for this chanllenge
+App yang digunakan untuk pengujian ini adalah **99.co Indonesia** (package: `com.urbanindo.android`),
+karena versi ini yang tersedia di Play Store region akun yang digunakan saat pengerjaan.
 
-## Requirement:
-- use newest Appium Version
-- use WebdriverIO as framework
-- use CommonJS as a code
-- use Page Object Model for code structure
-- use Gherkin as Test Cases
+### Cara Install & Menjalankan
 
-## Test Cases:
-- You are as an QA at 99, please download latest version of 99 (do not download the Pro Apps). You have the project to testing the revamp part on homepage, please scan all the locators and make it into the automation. so you can reduce testing time and also catch the bugs very sooner.
-- How to access the homepage
-1. please open the app
-2. once it's open you will see the homepage
+```bash
+# 1. Install dependencies
+npm install
 
+# 2. Install Appium driver untuk Android
+npx appium driver install uiautomator2
 
-Rule:
-- Please forking this repository
-- Invite indra99co as collaborator
-- once you done, please push into your branch and create the PR
+# 3. Jalankan test (Appium server otomatis dijalankan oleh @wdio/appium-service)
+npm test
+```
+
+Pastikan emulator Android (atau device fisik) sudah menyala dan app 99.co Indonesia
+sudah ter-install sebelum menjalankan `npm test`.
+
+### Hasil Pengujian
+
+Semua skenario di `test/features/homepage.feature` berhasil dijalankan dan **lulus (28/28 passing)**,
+mencakup:
+- Homepage berhasil dimuat setelah app dibuka
+- Search bar tampil
+- Tombol filter tampil dan bisa ditekan
+- Listing card properti tampil
+- Kelima tab bottom navigation (Cari, Hunian Baru, Iklan Saya, Buat Iklan, Akun Saya) tampil dan bisa ditekan
+
