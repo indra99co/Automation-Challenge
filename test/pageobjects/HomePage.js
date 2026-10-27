@@ -42,6 +42,10 @@ async openFilters() {
         return $('~Akun Saya\nTab 5 of 5');
     }
 
+    get myAccountTab() {
+        return $('~Akun Saya\nTab 5 of 5');
+    }
+
     async isSearchFieldDisplayed() {
         return await this.searchField.isDisplayed();
     }

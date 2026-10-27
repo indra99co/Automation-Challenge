@@ -55,3 +55,6 @@ Then('the filter panel should be displayed', async function () {
 When('I apply the homepage filters', async function () {
     await HomePage.applyFilters();
 });
+Then('the my account tab should be displayed', async function () {
+    await expect(HomePage.myAccountTab).toBeDisplayed();
+});

@@ -24,3 +24,6 @@ Feature: 99.co Indonesia Homepage
     Given the 99.co app is open
     When I open the homepage filters
     When I apply the homepage filters
+  Scenario: Verify homepage bottom navigation
+    Given the 99.co app is open
+    Then the my account tab should be displayed
