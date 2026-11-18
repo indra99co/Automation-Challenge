@@ -21,3 +21,6 @@ Rule:
 - Please forking this repository
 - Invite indra99co as collaborator
 - once you done, please push into your branch and create the PR
+
+Documentation:
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/a26a77bb-afd1-4ee1-97f4-a9f6b0e8c604" />
